@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <script type="text/javascript">
+       
+    </script>
+</head>
+<body>
+    <form action="ViewAppointment.html" ></form>
+        <table align="page-left">
+            <tr>
+                <td>
+                
+                    <label>Name </label><br>
+                </td>
+                <td>
+                    
+                    <input type="text" placeholder="fname" pattern="[A-Za-z]{4,10}" id="fnm" required/>
+                </td>
+                <td>
+                    
+                    <input type="text" placeholder="lname" pattern="[A-Za-z]{4,10}" id="lnm" required/><br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Age</label>
+                </td>
+                <td>
+                    <input type="number" size="2" min="18" max="60" id="age" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email</label>
+                </td>
+                <td>
+                    <input type="email" required >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Mobile no</label>
+                </td>
+                <td>
+                    <input type="text"  pattern="[0-9]{10}" id="phone" required/><br/>
+                </td>
+            </tr>
+            
+    <tr> <td><form>
+            <fieldset>
+            
+                    <legend>Address</legend>
+            <p>
+                    <input type = "text"
+                    id = "myText" maxlength="100" />
+            </p>
+                <p>
+                    <label>Street Address</label>
+                    <input type = "text"
+                    id = "myText1" />
+                </p>
+                <p>
+                    <label>State</label>
+                    <input type = "text"
+                        id = "myText1" />
+                </p>
+            <p>
+                <label>Country</label>
+                <select>
+                    <option name=" "></option>
+                    <option name="ind">INDIA</option>
+                    <option name="usa">USA</option>
+                    <option name="UK">UK</option>
+                    <option name="aus">AUSTRALIA</option>
+                    <option name="newyork">NEWYORK</option>
+                </select>
+            </p>
+            <p>
+                <label>Pin Code</label>
+                <input type="text" placeholder="Enter pincode" required pattern="^[0-9]{6}$"/>
+            </p>
+        </fieldset></form></td></tr>
+        </table>
+
+        <tr><form>
+            <td><span>Trainer Preference :</span></td><br>
+            <td><label for="chkmale">
+                <input type="radio" name="gender" id="chkmale" onclick="displayRadioValue()">
+                Male Trainer</br>
+            </label>
+                <div id="trainername2" style="display: none">
+                    Trainer Name
+                    <input type="text"  id="trainername2">
+                    others
+                    <input type="text"   id="others2">
+                </div>
+
+                <label for="chkfemale">
+                <input type="radio" name="gender" id="chkfemale" onclick="displayRadioValue()">
+                Female Trainer</br>
+            </label>
+
+                <div id="trainername1" style="display: none">
+                    Trainer Name
+                    <input type="text"  id="trainername1">
+                    others
+                    <input type="text"   id="others">
+                    </div>
+
+            <label for="chkothers">
+                <input type="radio" name="gender" id="chkothers" onclick="displayRadioValue()">
+                 No Preference</br>
+            </label>
+     
+                 <div id="trainername2" style="display: none">
+                 Trainer Name
+                 <input type="text"  id="trainername">
+                 others
+                 <input type="text"   id="others">
+                 </div>
+            </td></form>
+        </tr>
+            <div>
+                <label>Do you need a Physiotherapist ?</label><br/>
+                <input type="radio" name="reason" value="Yes" id="hi">Yes
+                <input type="radio" name="reason" value="No" id="hi">No
+            </div>
+
+            <tr><td>Appointment :</td></tr>
+            <table border="1" align="page-left" cellspacing="2" cellpadding="4">
+                <tr>
+                    <td><strong>Day</strong></td>
+                    <td><strong>7-9a.m</strong></td>
+                    <td><strong>9-11am</strong></td>
+                    <td><strong>11-1pm</strong></td>
+                    <td><strong>1-3pm</strong></td>
+                    <td><strong>3-5pm</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Monday</strong></td>
+                    <td><input type="radio" name="one" value="1">1</td>
+                    <td><input type="radio" name="one" value="2">2</td>
+                    <td><input type="radio" name="one" value="3">3</td>
+                    <td><input type="radio" name="one" value="4">4</td>
+                    <td><input type="radio" name="one" value="5">5</td>
+                </tr>
+                <tr>
+                    <td><strong>Tuesday</strong></td>
+                    <td><input type="radio" name="sev" value="1">1</td>
+                    <td><input type="radio" name="sev" value="2">2</td>
+                    <td><input type="radio" name="sev" value="3">3</td>
+                    <td><input type="radio" name="sev" value="4">4</td>
+                    <td><input type="radio" name="sev" value="5">5</td>
+                </tr>
+                <tr>
+                    <td><strong>Wednesday</strong></td>
+                    <td><input type="radio" name="six" value="1">1</td>
+                    <td><input type="radio" name="six" value="2">2</td>
+                    <td><input type="radio" name="six" value="3">3</td>
+                    <td><input type="radio" name="six" value="4">4</td>
+                    <td><input type="radio" name="six" value="5">5</td>
+                </tr>
+                <tr>
+                    <td><strong>Thursday</strong></td>
+                    <td><input type="radio" name="five" value="1">1</td>
+                    <td><input type="radio" name="five" value="2">2</td>
+                    <td><input type="radio" name="five" value="3">3</td>
+                    <td><input type="radio" name="five" value="4">4</td>
+                    <td><input type="radio" name="five" value="5">5</td>
+                </tr>
+                <tr>
+                    <td><strong>Friday</strong></td>
+                    <td><input type="radio" name="four" value="1">1</td>
+                    <td><input type="radio" name="four" value="2">2</td>
+                    <td><input type="radio" name="four" value="3">3</td>
+                    <td><input type="radio" name="four" value="4">4</td>
+                    <td><input type="radio" name="four" value="5">5</td>
+                </tr>
+                <tr>
+                    <td><strong>Saturday</strong></td>
+                    <td><input type="radio" name="three" value="1">1</td>
+                    <td><input type="radio" name="three" value="2">2</td>
+                    <td><input type="radio" name="three" value="3">3</td>
+                    <td><input type="radio" name="three" value="4">4</td>
+                    <td><input type="radio" name="three" value="5">5</td>
+                </tr>
+                <tr>
+                    <td><strong>Sunday</strong></td>
+                    <td><input type="radio" name="two" value="1">1</td>
+                    <td><input type="radio" name="two" value="2">2</td>
+                    <td><input type="radio" name="two" value="3">3</td>
+                    <td><input type="radio" name="two" value="4">4</td>
+                    <td><input type="radio" name="two" value="5">5</td>
+                </tr>
+            </table>
+                <div>
+                    <label>Select a Package :</label><br/>
+                    <input type="radio" name="reason" value="package" id="var">One Time Assessment Only (INR 500)<br/>
+                    <input type="radio" name="reason" value="package" id="var">Weekly Sessions (INR 400/session)<br/>
+                    <input type="radio" name="reason" value="package" id="var">12 Weekly Sessions (INR 300/sessions)<br/>
+                    <input type="radio" name="reason" value="package" id="var">Other <input type="text" name="Other_package" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​<br/>
+                </div>
+
+                <div>
+                    <label>Quote :</label><br/>
+                    <label>INR </label>
+                    <input type="text" id="rupee">
+                    <label>Paise</label>
+                    <input type="text" id="paise">
+                </div>
+
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>            
+   
+</body>
+</html>
